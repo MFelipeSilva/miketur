@@ -1,0 +1,58 @@
+.section_container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 700px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../../assets/clients-banner.webp");
+
+  & > .cloud_01 {
+    position: absolute;
+    width: 600px;
+    top: -190px;
+    right: 0;
+  }
+
+  & > .cloud_02 {
+    position: absolute;
+    width: 600px;
+    bottom: -150px;
+    left: -150px;
+  }
+
+  & > .content {
+    display: flex;
+    max-width: 1147.19px;
+    min-width: 1147.19px;
+    width: 60vw;
+    gap: 35px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    & > h2 {
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    & > .card_container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      & > .clients_card {
+        width: 330px;
+        height: 365px;
+        border-radius: 15px 0 15px 0;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
