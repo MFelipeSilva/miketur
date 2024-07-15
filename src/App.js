@@ -6,7 +6,7 @@ import Clients from "./pages/clients";
 import Advantages from "./pages/advantages";
 
 import { Airlines } from "./components/Airlines";
-import { Secutiry } from "./components/Security";
+import { Trust } from "./components/Trust";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -27,7 +27,9 @@ function App() {
       <Element name="vantagens">
         <Advantages />
       </Element>
-      <Secutiry />
+      <Element name="confiança">
+        <Trust />
+      </Element>
     </main>
   );
 }
