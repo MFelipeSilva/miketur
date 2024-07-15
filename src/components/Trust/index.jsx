@@ -2,9 +2,9 @@ import { PrimaryButton } from "../Button";
 
 import cadastur_image from "../../assets/cadastur-image.webp";
 
-import styles from "./Secutiry.module.css";
+import styles from "./Trust.module.css";
 
-export const Secutiry = () => {
+export const Trust = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
