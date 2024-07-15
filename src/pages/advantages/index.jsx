@@ -1,3 +1,7 @@
+import { PrimaryButton } from "../../components/Button";
+
+import { IconVersus, IconCheck, IconClose } from "../../components/Icons";
+
 import price_comparison_01 from "../../assets/price-comparison-01.webp";
 import price_comparison_02 from "../../assets/price-comparison-02.webp";
 
@@ -20,25 +24,49 @@ function Advantages() {
         <div className={styles.cards_container}>
           <div className={styles.card_advantages}>
             <h3>Viajar sozinho</h3>
-            <div>Emite passagem por um valor muito mais caro;</div>
-            <div>
-              Perde muito tempo tentando encontrar passagens com técnicas
-              mirabolantes e vendo dezenas de sites diferentes;
-            </div>
-            <div>Tem que cuidar de todos os detalhes da viagem;</div>
+            <ul>
+              <li>
+                <IconClose />
+                <p>Emite passagem por um valor muito mais caro;</p>
+              </li>
+              <li>
+                <IconClose />
+                <p>
+                  Perde muito tempo tentando encontrar passagens com técnicas
+                  mirabolantes e vendo dezenas de sites diferentes;
+                </p>
+              </li>
+              <li>
+                <IconClose />
+                <p> Tem que cuidar de todos os detalhes da viagem;</p>
+              </li>
+            </ul>
           </div>
+          <IconVersus />
           <div className={styles.card_advantages}>
             <h3>Viajar com o Miketur</h3>
-            <div>Viagens com até 30% de descontos em qualquer classe;</div>
-            <div>
-              Recebe na hora as melhores oportunidades sem nenhum esforço;
-            </div>
-            <div>
-              Não precisa se preocupar com emissão, cartão de embarque,
-              informações ou check-in;
-            </div>
+            <ul>
+              <li>
+                <IconCheck />
+                <p>Viagens com até 30% de descontos em qualquer classe;</p>
+              </li>
+              <li>
+                <IconCheck />
+                <p>
+                  Recebe na hora as melhores oportunidades sem nenhum esforço;
+                </p>
+              </li>
+              <li>
+                <IconCheck />
+                <p>
+                  Não precisa se preocupar com emissão, cartão de embarque,
+                  informações ou check-in;
+                </p>
+              </li>
+            </ul>
           </div>
         </div>
+        <PrimaryButton>Fale conosco</PrimaryButton>
       </div>
     </section>
   );
