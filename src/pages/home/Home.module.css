@@ -1,0 +1,44 @@
+.section_container {
+  display: flex;
+  width: 100%;
+  min-height: 800px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../../assets/home-banner.webp");
+
+  & > div {
+    position: relative;
+    display: flex;
+    width: 774px;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    & > h1 {
+      color: #ffffff;
+      font-size: 40px;
+      text-align: center;
+      text-transform: uppercase;
+
+      & > span {
+        color: #1b21a6;
+      }
+    }
+
+    & > svg {
+      position: absolute;
+      right: 120px;
+      bottom: 20px;
+    }
+
+    & > a > button {
+      width: 250px;
+    }
+  }
+}

@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Element } from "react-scroll";
+
+import Home from "./pages/home";
+import AboutUs from "./pages/about-us";
+import Clients from "./pages/clients";
+import Advantages from "./pages/advantages";
+
+import { Airlines } from "./components/Airlines";
+import { Secutiry } from "./components/Security";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main-container">
+      <Element name="home">
+        <Home />
+      </Element>
+      <Airlines />
+      <Element name="quem-somos">
+        <AboutUs />
+      </Element>
+      <Element name="clientes">
+        <Clients />
+      </Element>
+      <Element name="vantagens">
+        <Advantages />
+      </Element>
+      <Secutiry />
+    </main>
   );
 }
 
