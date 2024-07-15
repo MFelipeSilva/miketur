@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+
+  & > .navbar {
+    display: flex;
+    max-width: 1147.19px;
+    min-width: 1147.19px;
+    width: 60vw;
+    align-items: center;
+    justify-content: space-between;
+
+    & > a > img {
+      width: 80px;
+      height: 80px;
+      background-size: cover;
+    }
+
+    & > ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+
+      & > li > a {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+          color: #1b21a6;
+        }
+      }
+    }
+
+    & > a > button {
+      width: 150px;
+      font-size: 14px;
+    }
+  }
+}

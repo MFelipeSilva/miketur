@@ -1,0 +1,47 @@
+.container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+
+:global(.slick-slider) {
+  display: flex !important;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 1280px) {
+    min-width: 0;
+    width: 90vw;
+  }
+}
+
+:global(.slick-list) {
+  display: flex !important;
+}
+
+:global(.slick-track) {
+  display: flex !important;
+}
+
+:global(.slick-slide) {
+  display: flex !important;
+
+  & > div {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.logo_container {
+  display: flex !important;
+  width: 100% !important;
+
+  & > img {
+    width: 200px;
+  }
+}
