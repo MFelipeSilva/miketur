@@ -62,7 +62,7 @@ export const Header = () => {
               to="vantagens"
               spy={true}
               smooth={true}
-              offset={-150}
+              offset={0}
               duration={500}
               href="vantagens"
               onClick={() => setIsOpen(false)}
