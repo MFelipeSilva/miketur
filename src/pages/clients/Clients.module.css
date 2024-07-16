@@ -7,22 +7,24 @@
   align-items: center;
   justify-content: center;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url("../../assets/clients-banner.webp");
 
   & > .cloud_01 {
     position: absolute;
-    width: 600px;
-    top: -190px;
+    max-width: 600px;
+    width: 55%;
+    top: -35vh;
     right: 0;
+    transform: translateY(35%);
   }
 
   & > .cloud_02 {
     position: absolute;
-    width: 600px;
-    bottom: -150px;
+    max-width: 600px;
+    width: 50%;
+    bottom: 0;
     left: -150px;
   }
 
@@ -31,50 +33,110 @@
     max-width: 1147.19px;
     min-width: 1147.19px;
     width: 60vw;
-    gap: 35px;
+    gap: 30px;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 
     & > h2 {
       color: #ffffff;
-      font-size: 30px;
+      font-size: 24px, 3vw, 30px;
       font-weight: 700;
+      text-align: center;
     }
 
-    & > .card_container {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-
-      & > .clients_card {
-        display: flex;
-        width: 330px;
-        gap: 10px;
-        padding: 40px 20px;
-        background-color: #ffffff;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        justify-content: start;
-        border-right: 2px solid #1b21a6;
-        border-bottom: 2px solid #1b21a6;
-        border-radius: 15px 0 15px 0;
-
-        & > div {
-          display: flex;
-          gap: 10px;
-          flex-direction: column;
-
-          & > h3 {
-            font-size: 20px;
-          }
-        }
-
-        & > p {
-          font-size: 14px;
-        }
-      }
+    @media (max-width: 1280px) {
+      min-width: 0;
+      width: 90vw;
     }
+  }
+
+  @media (max-width: 992px) {
+    background-attachment: scroll;
+  }
+}
+
+.content :global(.slick-slider) {
+  display: flex !important;
+  max-width: 1147.19px;
+  min-width: 1147.19px;
+  width: 100%;
+
+  @media (max-width: 1280px) {
+    min-width: 0;
+    width: 90vw;
+  }
+}
+
+.content :global(.slick-list) {
+  display: flex !important;
+  margin: 0 -20px;
+}
+
+.content :global(.slick-track) {
+  display: flex !important;
+}
+
+.content :global(.slick-slide) {
+  display: flex !important;
+  margin: 0 15px;
+
+  & > div > div {
+    display: flex !important;
+    width: 99% !important;
+  }
+}
+
+.content :global(.slick-list:first-child) {
+  margin-left: 0;
+}
+
+.content :global(.slick-list:last-child) {
+  margin-right: 0;
+}
+
+.content :global(.slick-slide:first-child) {
+  margin-left: 0;
+}
+
+.content :global(.slick-slide:last-child) {
+  margin-right: 0;
+}
+
+.clients_card {
+  display: flex;
+  width: 100%;
+  height: 390px;
+  gap: 5px;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: start;
+  border-radius: 15px 0 15px 0;
+  border-right: 2px solid #1b21a6;
+  border-bottom: 2px solid #1b21a6;
+
+  & > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    & > img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+    }
+
+    & > h3 {
+      font-size: 20px;
+    }
+  }
+
+  & > p {
+    font-size: 14px;
   }
 }

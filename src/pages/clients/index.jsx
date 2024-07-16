@@ -1,5 +1,4 @@
-import cloud_01 from "../../assets/cloud-01.webp";
-import cloud_02 from "../../assets/cloud-02.webp";
+import Slider from "react-slick";
 
 import { clients } from "../../utils/clients";
 
@@ -8,12 +7,58 @@ import { Stars } from "../../components/Stars";
 import styles from "./Clients.module.css";
 
 function Clients() {
+  const settings = {
+    dots: false,
+    infinite: false,
+    arrows: false,
+    initialSlides: false,
+    speed: 400,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2.5,
+          slidesToScroll: 2.5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1.3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section className={styles.section_container}>
-      <img src={cloud_01} className={styles.cloud_01} alt="Nuvem 1" />
       <div className={styles.content}>
         <h2>Opiniões dos nossos clientes:</h2>
-        <div className={styles.card_container}>
+        <Slider {...settings}>
           {clients.map((client) => (
             <div className={styles.clients_card} key={client.id}>
               <div>
@@ -24,9 +69,8 @@ function Clients() {
               <p>{client.description}</p>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
-      <img src={cloud_02} className={styles.cloud_02} alt="Nuvem 2" />
     </section>
   );
 }
