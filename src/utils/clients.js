@@ -1,11 +1,11 @@
-import name_avatar_01 from "../assets/name-avatar-01.png";
-import name_avatar_02 from "../assets/name-avatar-02.png";
-import name_avatar_03 from "../assets/name-avatar-03.png";
+import avatar_01 from "../assets/gislene-photo.png";
+import avatar_02 from "../assets/tiago-photo.png";
+import avatar_03 from "../assets/paula-photo.png";
 
 export const clients = [
   {
     id: "1",
-    image: name_avatar_01,
+    image: avatar_01,
     name: "Gislene M.",
     stars: 5,
     description:
@@ -13,7 +13,7 @@ export const clients = [
   },
   {
     id: "2",
-    image: name_avatar_02,
+    image: avatar_02,
     name: "Tiago N.",
     stars: 5,
     description:
@@ -21,7 +21,7 @@ export const clients = [
   },
   {
     id: "3",
-    image: name_avatar_03,
+    image: avatar_03,
     name: "Paula F.",
     stars: 5,
     description:
