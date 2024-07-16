@@ -7,3 +7,5 @@ export * from "./check";
 export * from "./versus";
 export * from "./whatsapp";
 export * from "./instagram";
+export * from "./closed-transition";
+export * from "./menu-transition";
