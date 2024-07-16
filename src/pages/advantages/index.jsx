@@ -16,10 +16,10 @@ function Advantages() {
           com <span>Miketur</span>
         </h2>
         <div className={styles.price_comparison}>
-          <p>Voo de um dia para o outro – São Paulo ao Rio de Janeiro:</p>
-          <img src={price_comparison_01} alt="" />
-          <p>Com o SPB3:</p>
-          <img src={price_comparison_02} alt="" />
+          <h3>Voo de um dia para o outro – São Paulo ao Rio de Janeiro:</h3>
+          <img src={price_comparison_01} alt="Viagem com preço alto" />
+          <h3>Com o SPB3:</h3>
+          <img src={price_comparison_02} alt="Viagem com preço baixo" />
         </div>
         <div className={styles.cards_container}>
           <div className={styles.card_advantages}>
