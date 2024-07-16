@@ -10,7 +10,7 @@ export const Footer = () => {
           <li>
             <a href="https://www.instagram.com/miketur_/">
               <IconInstagram />
-              Miketur_
+              miketur_
             </a>
           </li>
           <li>
