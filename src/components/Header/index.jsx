@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 
 import logo from "../../assets/logo.webp";
 
+import { IconClosed, IconMenu } from "../Icons";
+
 import { PrimaryButton } from "../Button";
 
 import styles from "./Header.module.css";
@@ -25,7 +27,12 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <a href="/" className={styles.logo} alt="" title="Back to home">
+        <a
+          href="/"
+          className={styles.logo}
+          alt="Logo do site"
+          title="Back to home"
+        >
           <img src={logo} />
         </a>
         <ul
@@ -36,7 +43,7 @@ export const Header = () => {
               to="quem-somos"
               spy={true}
               smooth={true}
-              offset={-150}
+              offset={0}
               duration={500}
               href="quem-somos"
               onClick={() => setIsOpen(false)}
@@ -75,7 +82,7 @@ export const Header = () => {
               to="confiança"
               spy={true}
               smooth={true}
-              offset={-150}
+              offset={0}
               duration={500}
               href="confiança"
               onClick={() => setIsOpen(false)}
@@ -83,8 +90,18 @@ export const Header = () => {
               Confiança
             </Link>
           </li>
+          <PrimaryButton>Promoções</PrimaryButton>
         </ul>
         <PrimaryButton>Promoções</PrimaryButton>
+        {!isOpen ? (
+          <button onClick={() => setIsOpen(!isOpen)}>
+            <IconClosed />
+          </button>
+        ) : (
+          <button onClick={() => setIsOpen(!isOpen)}>
+            <IconMenu />
+          </button>
+        )}
       </nav>
     </header>
   );
