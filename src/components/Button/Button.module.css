@@ -7,14 +7,19 @@ a {
     height: 50px;
     gap: 10px;
     cursor: pointer;
-    color: #ffffff;
+    color: var(--tertiary-color);
     padding: 10px;
     font-size: 15px;
     font-weight: 600;
-    border-radius: 15px;
+    border-radius: var(--border-radius-default);
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    background-color: #1b21a6;
+    background-color: var(--primary-color);
+    transition: background 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #0511f2;
+    }
   }
 }

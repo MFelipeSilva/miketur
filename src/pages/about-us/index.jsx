@@ -8,13 +8,13 @@ function AboutUs() {
       <div className={styles.content}>
         <img
           src={owners_image}
-          alt="Donos da empresa Miketur Kaio e Lorena"
+          alt="Donos da empresa Miketur"
           title="Kaio e Lorena"
         />
         <div className={styles.text_container}>
           <h2>Quem somos?</h2>
           <p>
-            Somos Kaio e Lorena, os idealizadores da MikeTur. Nossa paixão por
+            Somos Kaio e Lorena, os idealizadores da Miketur. Nossa paixão por
             viajar nos uniu e nos inspirou a criar uma agência de viagens
             dedicada a transformar sonhos em realidade. Combinamos nossa
             experiência e entusiasmo para oferecer pacotes de viagens nacionais

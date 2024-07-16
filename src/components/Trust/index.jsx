@@ -9,7 +9,7 @@ export const Trust = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.text_container}>
-          <h3>Uma viagem garantida 100% segura!</h3>
+          <h2>Uma viagem garantida 100% segura!</h2>
           <p>
             A Miketur é uma empresa séria e confiável! Temos nosso
             credenciamento na Cadastur, confira:
@@ -18,8 +18,8 @@ export const Trust = () => {
         </div>
         <img
           src={cadastur_image}
-          alt="Cerificado CADASTUR"
-          title="Cerificado CADASTUR"
+          alt="Certificado de Credenciamento Cadastur da Miketur"
+          title="Certificado de Credenciamento Cadastur da Miketur"
         />
       </div>
     </div>

@@ -16,7 +16,7 @@ function Advantages() {
           com <span>Miketur</span>
         </h2>
         <div className={styles.price_comparison}>
-          <h3>Voo de um dia para o outro – São Paulo ao Rio de Janeiro:</h3>
+          <h3>Voo de um dia para o outro – São Paulo para Tóquio:</h3>
           <img src={price_comparison_01} alt="Viagem com preço alto" />
           <h3>Com o SPB3:</h3>
           <img src={price_comparison_02} alt="Viagem com preço baixo" />

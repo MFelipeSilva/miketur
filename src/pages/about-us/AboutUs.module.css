@@ -20,9 +20,9 @@
     & > img {
       width: 530px;
       height: auto;
-      border: 2px solid #1b21a6;
-      border-radius: 15px 0 15px 0;
-      box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 10px 8px;
+      border: 2px solid var(--primary-color);
+      border-radius: var(--border-radius-default);
+      box-shadow: var(--shadow-default);
 
       @media (max-width: 768px) {
         width: 100%;
@@ -36,8 +36,8 @@
       flex-direction: column;
 
       & > h2 {
-        color: #000000;
-        font-size: clamp(24px, 3vw, 30px);
+        color: var(--secondary-color);
+        font-size: var(--subtitle);
         font-weight: 700;
       }
 

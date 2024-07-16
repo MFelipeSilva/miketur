@@ -1,3 +1,13 @@
+:root {
+  --subtitle: clamp(24px, 3vw, 30px);
+  --primary-color: #1b21a6;
+  --secondary-color: #000000;
+  --tertiary-color: #ffffff;
+  --border-radius-button: 15px;
+  --border-radius-default: 15px 0 15px 0;
+  --shadow-default: rgba(0, 0, 0, 0.1) 4px 4px 10px 8px;
+}
+
 * {
   margin: 0;
   border: 0;

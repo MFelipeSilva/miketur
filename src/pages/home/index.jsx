@@ -7,7 +7,7 @@ import styles from "./Home.module.css";
 function Home() {
   return (
     <section className={styles.section_container}>
-      <div>
+      <div className={styles.content}>
         <h1>
           Descubra o Mundo com a <span>MIKETUR</span>: Onde Cada ​Roteiro é Uma
           História Inesquecível!

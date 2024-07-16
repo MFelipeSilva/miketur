@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #1b21a6;
+  background-color: var(--primary-color);
 
   & > .content {
     display: flex;
@@ -15,7 +15,7 @@
     flex-direction: column;
 
     & > h3 {
-      color: #ffffff;
+      color: var(--tertiary-color);
       font-size: 20px;
       font-weight: 600;
       text-transform: uppercase;
@@ -31,7 +31,7 @@
       & > li > a {
         display: flex;
         gap: 5px;
-        color: #ffffff;
+        color: var(--tertiary-color);
         font-size: 16px;
         align-items: center;
       }
@@ -41,7 +41,7 @@
   & > p {
     width: 90%;
     text-align: center;
-    color: #ffffff;
+    color: var(--tertiary-color);
     font-weight: 300;
     font-size: clamp(14px, 2vw, 16px);
 

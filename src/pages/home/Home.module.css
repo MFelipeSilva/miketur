@@ -11,7 +11,7 @@
   background-attachment: fixed;
   background-image: url("../../assets/home-banner.webp");
 
-  & > div {
+  & > .content {
     position: relative;
     display: flex;
     max-width: 774px;
@@ -21,13 +21,13 @@
     justify-content: center;
 
     & > h1 {
-      color: #ffffff;
+      color: var(--tertiary-color);
       font-size: clamp(30px, 3.5vw, 40px);
       text-align: center;
       text-transform: uppercase;
 
       & > span {
-        color: #1b21a6;
+        color: var(--primary-color);
       }
     }
 

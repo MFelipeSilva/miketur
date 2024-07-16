@@ -39,8 +39,8 @@
     justify-content: center;
 
     & > h2 {
-      color: #ffffff;
-      font-size: clamp(24px, 3vw, 30px);
+      color: var(--tertiary-color);
+      font-size: var(--subtitle);
       font-weight: 700;
       text-align: center;
     }
@@ -109,14 +109,14 @@
   height: 390px;
   gap: 5px;
   padding: 30px 20px;
-  background-color: #ffffff;
+  background-color: var(--tertiary-color);
   align-items: center;
   text-align: center;
   flex-direction: column;
   justify-content: start;
-  border-radius: 15px 0 15px 0;
-  border-right: 2px solid #1b21a6;
-  border-bottom: 2px solid #1b21a6;
+  border-radius: var(--border-radius-default);
+  border-right: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 
   & > div {
     display: flex;
