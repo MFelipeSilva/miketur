@@ -27,13 +27,8 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.navbar}>
-        <a
-          href="/"
-          className={styles.logo}
-          alt="Logo do site"
-          title="Back to home"
-        >
-          <img src={logo} />
+        <a href="/" className={styles.logo} title="Back to home">
+          <img src={logo} alt="Logo do site" />
         </a>
         <ul
           className={`${styles.links_container} ${isOpen ? styles.active : ""}`}
