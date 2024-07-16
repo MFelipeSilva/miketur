@@ -12,7 +12,7 @@ export const Trust = () => {
           <h3>Uma viagem garantida 100% segura!</h3>
           <p>
             A Miketur é uma empresa séria e confiável! Temos nosso
-            credenciamento na CADASTUR, confira:
+            credenciamento na Cadastur, confira:
           </p>
           <PrimaryButton>Fale conosco</PrimaryButton>
         </div>
