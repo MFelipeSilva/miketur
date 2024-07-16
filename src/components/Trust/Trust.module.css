@@ -27,7 +27,7 @@
 
       & > h3 {
         color: #000000;
-        font-size: 24px, 3vw, 30px;
+        font-size: (24px, 3vw, 30px);
         font-weight: 700;
       }
 
